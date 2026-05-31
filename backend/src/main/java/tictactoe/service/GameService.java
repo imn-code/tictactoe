@@ -16,6 +16,8 @@ public class GameService {
     private Game currentGame;
     private final Random random = new Random();
 
+    
+
     public Game startGame(Symbol playerSymbol) {
         currentGame = new Game(DEFAULT_SIZE, DEFAULT_WIN_LENGTH, playerSymbol);
         return currentGame;
