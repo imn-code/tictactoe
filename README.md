@@ -269,4 +269,4 @@ Ces évolutions nécessiteraient peu de modifications dans l'architecture actuel
 
 ## Auteur
 
-Projet réalisé dans le cadre d'un exercice technique avec Java Spring Boot et React.
+Projet réalisé dans le cadre d'un exercice technique pour Easi par Iman Azoioui.
