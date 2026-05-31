@@ -1,6 +1,7 @@
 package tictactoe.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +23,6 @@ public class GameController {
         this.service = gameService;
     }
 
-
     @PostMapping("/start")
     public Game startGame(@RequestBody StartGameRequest request) {
         return service.startGame(request.getPlayerSymbol());
@@ -34,5 +34,15 @@ public class GameController {
                 request.getRow(),
                 request.getCol()
         );
+    }
+
+    @GetMapping
+    public Game getGame() {
+        return service.getCurrentGame();
+    }
+
+    @PostMapping("/restart")
+    public Game restart() {
+        return service.restartGame();
     }
 }
