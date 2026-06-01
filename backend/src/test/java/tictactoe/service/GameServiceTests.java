@@ -3,14 +3,13 @@ package tictactoe.service;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import tictactoe.entities.Game;
 import tictactoe.entities.GameStatus;
 import tictactoe.entities.Symbol;
-import tictactoe.service.GameService;
+
 
 public class GameServiceTests {
 

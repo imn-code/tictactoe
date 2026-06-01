@@ -1,4 +1,4 @@
-package tictactoe.entities.dtos;
+package tictactoe.dtos;
 
 import tictactoe.entities.Symbol;
 

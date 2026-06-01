@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import tictactoe.entities.Game;
-import tictactoe.entities.dtos.MoveRequest;
-import tictactoe.entities.dtos.StartGameRequest;
+import tictactoe.dtos.MoveRequest;
+import tictactoe.dtos.StartGameRequest;
 import tictactoe.service.GameService;
 
 @RestController

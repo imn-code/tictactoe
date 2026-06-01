@@ -2,23 +2,23 @@ package tictactoe.controller;
 
 
 import org.junit.jupiter.api.Test;
-
+import static org.mockito.Mockito.when;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import tictactoe.dtos.MoveRequest;
+import tictactoe.dtos.StartGameRequest;
 import tictactoe.entities.Game;
 import tictactoe.entities.Symbol;
-import tictactoe.entities.dtos.MoveRequest;
-import tictactoe.entities.dtos.StartGameRequest;
 import tictactoe.service.GameService;
 import tools.jackson.databind.ObjectMapper;
 
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(GameController.class)
 public class GameControllerTests {
